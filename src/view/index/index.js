@@ -4,13 +4,13 @@ import React, {
 
 import { Row, Col } from 'antd';
 import IndexMenu from './indexMenu';
-let arr = [];
-for (let i = 0; i < 100; i++) {
-    arr.push(<li>这是第{i}个li</li>)
-}
+import IndexList from './list';
+
 
 class Index extends Component {
     render() {
+        let tab = this.props.match.params.id;
+        console.log(this.props)
         return (
             <Row className="wrap">
                 <Col md={6} xs={0} className="indexSider">
@@ -20,7 +20,7 @@ class Index extends Component {
                     <IndexMenu id="indexXsMenu" mode="horizontal"></IndexMenu>
                 </Col>
                 <Col md={18} xs={24} className="indexList">
-                    {arr}
+                    <IndexList tab={tab} />
                 </Col>
             </Row>
         );

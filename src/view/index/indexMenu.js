@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 class IndexMenu extends Component {
     render() {
+        let { id, mode } = this.props;
         return (
-            <Menu id={this.props.id} mode={this.props.mode}>
+            <Menu id={id} mode={mode}>
                 <Menu.Item>
                     <Link to="/index/all">全部</Link>
                 </Menu.Item>

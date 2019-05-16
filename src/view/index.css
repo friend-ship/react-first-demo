@@ -4,15 +4,20 @@
     flex-direction: column;
 }
 
+.wrap {
+    max-width: 980px;
+    margin: 0 auto !important;
+}
+
 #logo {
     color: #fff;
     margin-bottom: 0;
     text-align: center;
 }
 
-.wrap {
-    max-width: 980px;
-    margin: 0 auto !important;
+
+.wrap img {
+    max-width: 100%;
 }
 
 .headerDivider {
@@ -91,6 +96,83 @@
     float: none;
     text-align: center;
 }
+
+.indexList {
+    padding: 0 10px;
+}
+
+.indexList p {
+    margin: 0;
+}
+
+.replyList .ant-list-item-meta-avatar {
+    display: block;
+}
+
+.ant-list-item-action {
+    margin-left: 36px;
+}
+
+.ant-list-item-meta {
+    min-width: 200px;
+    align-items: center;
+}
+
+.userAvatar {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.userInfo {
+    text-align: center;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.userList {
+    line-height: 32px;
+}
+
+.userList .ant-list-item {
+    position: relative;
+}
+
+.userList .ant-list-item * {
+    vertical-align: middle;
+}
+
+.userList .ant-list-item-content {
+    display: block;
+}
+
+.userList .userName {
+    margin: 0 10px 0 5px;
+}
+
+.userList h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+.userList time {
+    position: absolute;
+    right: 0;
+    top: 12;
+}
+
+@media all and (max-width:767px) {
+    .userList h4 {
+        display: block;
+    }
+}
+
+
+
+
+
 
 
 
