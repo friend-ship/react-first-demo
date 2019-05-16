@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
 
-export default class IndexMenu extends Component {
+class IndexMenu extends Component {
     render() {
         return (
             <Menu id={this.props.id} mode={this.props.mode}>
@@ -28,3 +28,5 @@ export default class IndexMenu extends Component {
         )
     }
 }
+
+export default IndexMenu;

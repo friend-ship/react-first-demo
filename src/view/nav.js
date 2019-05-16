@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default class Nav extends Component {
     render() {
-        let { mode, id } = this.props;
         return (
-            <Menu mode={mode} id={id} >
+            <Menu mode={this.props.mode} id={this.props.id} >
                 <Menu.Item>
                     <Link to="/index"><Icon type="home"></Icon>首页</Link>
                 </Menu.Item>

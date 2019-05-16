@@ -2,7 +2,7 @@ import React, {
     Component
 } from "react";
 
-import { Menu, Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 import IndexMenu from './indexMenu';
 let arr = [];
 for (let i = 0; i < 100; i++) {
