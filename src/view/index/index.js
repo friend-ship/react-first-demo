@@ -10,7 +10,6 @@ import IndexList from './list';
 class Index extends Component {
     render() {
         let tab = this.props.match.params.id;
-        console.log(this.props)
         return (
             <Row className="wrap">
                 <Col md={6} xs={0} className="indexSider">

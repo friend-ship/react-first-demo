@@ -20,11 +20,11 @@ class RouterIndex extends Component {
                 <Route path='/' exact render={() => (
                     <Redirect to="/index/all" />
                 )} />
-                <Route path='/index' component={Index} />
+                <Route path='/index/:id' component={Index} />
                 <Route path='/book' component={Book} />
                 <Route path='/about' component={About} />
-                <Route path='/user' component={User} />
-                <Route path='/details' component={Details} />
+                <Route path='/user/:id' component={User} />
+                <Route path='/details/:id' component={Details} />
 
             </Switch>
         );
